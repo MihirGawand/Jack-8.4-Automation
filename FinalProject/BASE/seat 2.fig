@@ -1,0 +1,28 @@
+figure {
+    attribute seat_2_attrib0 {
+        ambient = (0.200,0.200,0.200);
+        diffuse = (0.800,0.800,0.800);
+    }
+    segment base {
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg0 {
+        psurf = "seat 2_seg0.pss";
+        attribute = seat_2_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg1 {
+        psurf = "seat 2_seg1.pss";
+        attribute = seat_2_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_0 {
+        connect base.base to seg0.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_1 {
+        connect base.base to seg1.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    root = base.base;
+}

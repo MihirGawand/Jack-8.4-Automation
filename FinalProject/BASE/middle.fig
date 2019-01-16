@@ -1,0 +1,22 @@
+figure {
+    attribute middle_attrib0 {
+        ambient = (0.160,0.164,0.188);
+        diffuse = (0.640,0.656,0.752);
+        specular = (0.400,0.410,0.470);
+    }
+    segment base {
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+        site center_of_mass->location = trans(16.2583cm,17.0493cm,0.4963cm);
+    }
+    segment seg0 {
+        psurf = "middle_seg0.pss";
+        attribute = middle_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+        site S0->location = trans(23.3471cm,11.8826cm,1.5080cm);
+    }
+    joint dummy_0 {
+        connect base.base to seg0.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    root = base.base;
+}

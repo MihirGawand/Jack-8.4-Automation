@@ -1,0 +1,147 @@
+figure {
+    attribute assem_base_final_attrib1 {
+        ambient = (0.166,0.200,0.112);
+        diffuse = (0.664,0.800,0.448);
+    }
+    attribute assem_base_final_attrib0 {
+        ambient = (0.158,0.164,0.186);
+        diffuse = (0.632,0.656,0.744);
+    }
+    attribute assem_base_final_attrib2 {
+        ambient = (0.134,0.140,0.154);
+        diffuse = (0.536,0.560,0.616);
+    }
+    attribute assem_base_final_attrib3 {
+        ambient = (0.160,0.164,0.188);
+        diffuse = (0.640,0.656,0.752);
+    }
+    attribute assem_base_final_attrib4 {
+        ambient = (0.194,0.176,0.120);
+        diffuse = (0.776,0.704,0.480);
+    }
+    attribute assem_base_final_attrib5 {
+        ambient = (0.200,0.200,0.200);
+        diffuse = (0.800,0.800,0.800);
+    }
+    segment base {
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg8 {
+        psurf = "../assem_base_final_seg8.pss";
+        attribute = assem_base_final_attrib1;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg9 {
+        psurf = "../assem_base_final_seg9.pss";
+        attribute = assem_base_final_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg10 {
+        psurf = "../assem_base_final_seg10.pss";
+        attribute = assem_base_final_attrib2;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg11 {
+        psurf = "../assem_base_final_seg11.pss";
+        attribute = assem_base_final_attrib3;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg13 {
+        psurf = "../assem_base_final_seg13.pss";
+        attribute = assem_base_final_attrib4;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg15 {
+        psurf = "../assem_base_final_seg15.pss";
+        attribute = assem_base_final_attrib5;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg16 {
+        psurf = "../assem_base_final_seg16.pss";
+        attribute = assem_base_final_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg17 {
+        psurf = "../assem_base_final_seg17.pss";
+        attribute = assem_base_final_attrib5;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg18 {
+        psurf = "../assem_base_final_seg18.pss";
+        attribute = assem_base_final_attrib5;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg19 {
+        psurf = "../assem_base_final_seg19.pss";
+        attribute = assem_base_final_attrib4;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg20 {
+        psurf = "../assem_base_final_seg20.pss";
+        attribute = assem_base_final_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg24 {
+        psurf = "../assem_base_final_seg24.pss";
+        attribute = assem_base_final_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg25 {
+        psurf = "../assem_base_final_seg25.pss";
+        attribute = assem_base_final_attrib0;
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_8 {
+        connect base.base to seg8.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_9 {
+        connect base.base to seg9.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_10 {
+        connect base.base to seg10.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_11 {
+        connect base.base to seg11.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_13 {
+        connect base.base to seg13.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_15 {
+        connect base.base to seg15.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_16 {
+        connect base.base to seg16.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_17 {
+        connect base.base to seg17.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_18 {
+        connect base.base to seg18.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_19 {
+        connect base.base to seg19.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_20 {
+        connect base.base to seg20.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_24 {
+        connect base.base to seg24.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_25 {
+        connect base.base to seg25.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    root = base.base;
+}

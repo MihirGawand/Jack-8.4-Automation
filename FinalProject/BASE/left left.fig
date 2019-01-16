@@ -1,0 +1,23 @@
+figure {
+    attribute left_left_attrib0 {
+        ambient = (0.158,0.164,0.186);
+        diffuse = (0.632,0.656,0.744);
+    }
+    attribute left_left_attrib1 {
+        ambient = (0.180,0.180,0.180);
+        diffuse = (0.720,0.720,0.720);
+    }
+    segment base {
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    segment seg0 {
+        psurf = "left left_seg0.pss";
+        attributes = (left_left_attrib0,left_left_attrib1);
+        site base->location = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    joint dummy_0 {
+        connect base.base to seg0.base;
+        displacement = trans(0.0000cm,0.0000cm,0.0000cm);
+    }
+    root = base.base;
+}
